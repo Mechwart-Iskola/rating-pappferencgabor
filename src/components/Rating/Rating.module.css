@@ -1,0 +1,68 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating {
+    width: 400px;
+    background-color: var(--DarkBlue);
+    padding: 25px;
+    border-radius: 25px;
+    
+}
+.rating img {
+    background-color: var(--Grey);
+    width: 48px;
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.rating h1 {
+    color: var(--White);
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.rating p {
+    color: var(--LightGrey);
+    font-size: 15px;
+}
+.rating button {
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: var(--Orange);
+    font-family: var(--Overpass);
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+.rating button:hover {
+    background-color: darkorange;
+}
+
+
+.valueContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.valueItem {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--LightGrey);
+    border-radius: 50%;
+    background-color: var(--Grey);
+    cursor: pointer;
+}
+.valueItem:hover {
+    background-color: var(--VeryDarkBlue);
+}
