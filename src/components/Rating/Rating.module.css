@@ -13,7 +13,7 @@ body {
     border-radius: 25px;
     
 }
-.rating img {
+.rating:nth-child(1) img {
     background-color: var(--Grey);
     width: 48px;
     padding: 15px;
@@ -30,7 +30,7 @@ body {
     color: var(--LightGrey);
     font-size: 15px;
 }
-.rating button {
+.btnSubmit {
     width: 100%;
     padding: 10px;
     text-transform: uppercase;
@@ -41,9 +41,10 @@ body {
     border-radius: 25px;
     border: none;
     cursor: pointer;
+    transition: 0.2s;
 }
-.rating button:hover {
-    background-color: darkorange;
+.btnSubmit:hover {
+    background-color: var(--White);
 }
 
 
@@ -55,14 +56,41 @@ body {
 .valueItem {
     width: 48px;
     height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: var(--LightGrey);
     border-radius: 50%;
     background-color: var(--Grey);
     cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    transition: 0.2s;
 }
 .valueItem:hover {
-    background-color: var(--VeryDarkBlue);
+    background-color: var(--Orange);
+    color: var(--DarkBlue);
+}
+.valueItem:focus {
+    background-color: var(--White);
+    color: var(--DarkBlue);
+}
+
+
+.thankYou {
+    text-align: center;
+}
+.thankYou h1 {
+    margin-top: 20px;
+}
+.thankYou img {
+    margin-bottom: 20px;
+}
+
+.selectedRate {
+    margin: auto;
+    width: fit-content;
+    display: block;
+    background-color: var(--Grey);
+    padding: 2px;
+    border-radius: 10px;
+    color: var(--Orange) !important;
 }
